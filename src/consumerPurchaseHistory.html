@@ -9,60 +9,29 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	</head>
-	<body>
-	<section class="ftco-section">
-		<div class="container-fluid px-md-5">
-			<div class="row justify-content-between">
-				<div class="col-md-8 order-md-last">
-					<div class="row">
-						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a>
-						</div>
-						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-							<form action="#" class="searchform order-lg-last">
-			          
-			        </form>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex">
-					<div class="social-media">
-		    		
-	        </div>
-				</div>
-			</div>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container-fluid">
-	    
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="fa fa-bars"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-			  	<li class="nav-item "><a href="manufacturer.html" class="nav-link">Manufacturer</a></li>
-	        	<li class="nav-item"><a href="seller.html" class="nav-link">Seller</a></li>
-	          	<li class="nav-item"><a href="consumer.html" class="nav-link">Consumer</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
 	
-	<section>
-        <div class="container">
-            <h2>Consumer Product History</h2>
-       
-              <div class="form-group">
-                <label for="consumerCode">Consumer Code</label>
-                <input type="text" class="form-control" id="consumerCode" placeholder="Enter Consumer Code" name="consumerCode">
-              </div>
-              
-              <button type="submit" class="btn btn-warning btn-register" id="register">Get Products</button>
-          </div>
-    </section>
+<body class="bg-[#E3FEF7]">
+	<div>
+		<div class="text-center mt-20">
+			<p class="font-bold text-[#003C43] text-3xl">Product History</p>
+			<p class="font-bold text-[#003C43]">Consumer</p>
+		</div>
+			<div class="bg-[#77B0AA] w-80 mx-auto py-2 px-3 rounded-xl mt-10">
+				<div class="mb-2">
+					<label for="consumerCode" class="block mb-1 text-sm font-medium text-gray-900">Consumer Code</label>
+					<input type="text" id="consumerCode" name="consumerCode"
+						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+				</div>
 
+				<button type="submit" class="bg-[#003C43] p-2 text-sm text-white rounded-lg my-2" id="register"
+					>Get Products</button>
+			</div>
+			<!-- <br></br>	 -->
+		
+		<div class="bg-[#77B0AA] font-bold text-[#003C43] w-32 text-center p-2 rounded-xl mx-auto mt-4">
+			<a href="consumer.html">Back</a>
+		</div>
+	</div>
 
 	</section>
     <section>
@@ -91,6 +60,7 @@
   <script src="js/web3.min.js"></script>
   <script src="js/truffle-contract.js"></script>
   <script src="js/consumerPurchaseHistory.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
 
