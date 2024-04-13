@@ -20,7 +20,12 @@
 		</div>
 			<div class="bg-[#77B0AA] w-80 mx-auto py-2 px-3 rounded-xl mt-10">
 				<div class="mb-2">
-					<label for="seller_id" class="block mb-1 text-sm font-medium text-gray-900">Seller Brand</label>
+					<label for="seller_id" class="block mb-1 text-sm font-medium text-gray-900">Seller Name</label>
+					<input type="text" id="SellerName" name="SellerName"
+						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+				</div>
+				<div class="mb-2">
+					<label for="name" class="block mb-1 text-sm font-medium text-gray-900">Seller Brand</label>
 					<input type="text"   id="SellerBrand" name="SellerBrand"
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
 				</div>
@@ -45,16 +50,11 @@
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
 				</div>
 				<div class="mb-2">
-					<label for="name" class="block mb-1 text-sm font-medium text-gray-900">Seller Address</label>
-					<input type="text" id="SellerAddress" name="SellerAddress"
-						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
-				</div>
-				<div class="mb-2">
 					<label for="username" class="block mb-1 text-sm font-medium text-gray-900">Manufacturer ID</label>
 					<input type="text" id="ManufacturerId" name="ManufacturerId"
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
 				</div>
-				<button type="submit" class="bg-[#003C43] p-2 text-sm text-white rounded-lg my-2" id="register"
+				<button type="submit" class="bg-[#003C43] p-2 text-sm text-white rounded-lg my-2 btn-register" id="register"
 					>Add the Seller</button>
 			</div>
 			<!-- <br></br>	 -->
@@ -65,40 +65,14 @@
 	</div>
 
 
-
+	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
-	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/web3.min.js"></script>
 	<script src="js/truffle-contract.js"></script>
-	<script src="js/productApp.js"></script>
-	<script src="https://cdn.tailwindcss.com"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
-	<script>
-		var src;
-		var qrValue;
-		function fetchQR() {
-			qrValue = document.getElementById('productSN').value;
-			qrImage = document.querySelector(".qr-code");
-			qrImageResult = qrImage.querySelector("img");
-			src = qrImageResult.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
-
-
-			downloadQrImg = document.getElementById('imgQR');
-			downloadQrBtn = document.getElementById('download');
-			downloadQrImg.removeAttribute('hidden');
-			downloadQrBtn.removeAttribute('hidden');
-
-		}
-
-		function saveImage() {
-			saveAs(src, qrValue);
-			downloadQrImg.setAttribute('hidden', 'hidden');
-			downloadQrBtn.setAttribute('hidden', 'hidden');
-		}
-	</script>
-
+	<script src="js/sellerApp.js"></script>
 </body>
 
 </html>

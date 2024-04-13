@@ -48,7 +48,7 @@ App = {
 
             var account=accounts[0];
             // console.log(account);
-
+            console.log(web3.fromAscii(manufacturerCode));
             App.contracts.product.deployed().then(function(instance){
 
                 productInstance=instance;

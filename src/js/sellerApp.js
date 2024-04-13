@@ -37,7 +37,7 @@ App = {
 
     registerProduct: function(event) {
         event.preventDefault();
-
+        console.log('Registering Product')
         var productInstance;
 
         var sellerName = document.getElementById('SellerName').value;
